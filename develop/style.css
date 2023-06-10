@@ -180,8 +180,6 @@ and (max-width : 768px){
 .worksArea{
     max-height: 50px;
     max-width: 300px;
-    position: relative;
-    left: 150px;
 }
 
 #viewBtn{

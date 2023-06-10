@@ -3,7 +3,7 @@
 }
 
 body{
-    background-image: url(./images/background.jpg);
+    background-image: url(./images/color\ background.jpg);
     background-color: black;
     margin: 0;
     padding:0;
@@ -92,8 +92,10 @@ ul li:hover{
 
 #aboutMe h2{
     background-color: rgba(255, 251, 251, 0.15); 
-    border-radius: 20px;
+    border-radius: 15px;
     padding-left: 25px;
+    max-width: 30%;
+    max-height: 75px;
 }
 
 
@@ -101,6 +103,49 @@ ul li:hover{
     padding-left: 30%;
     max-width: 25%;
     
+}
+
+
+.worksArea{
+    margin-top: 25px;
+    position: relative;
+    left: 31.5%;
+    background-color: rgba(255, 251, 251, 0.15); 
+    border-radius: 15px;
+    width: 35%;
+    height: 100px;
+}
+
+.worksArea:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#viewBtn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 35px;
+}
+
+
+.bigProjectCard{
+    text-align: center;
+    margin-top: 35px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 35px;
+}
+
+.projectImg{
+    max-width: 60%;
+    border-radius: 10px;
 }
 
 @media only screen

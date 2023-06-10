@@ -162,4 +162,9 @@ and (max-width : 768px){
     text-align: center;
     padding: 0%;
 }
+
+.bigProjectCard{
+    display: flex;
+    flex-direction: column;
+}
 }

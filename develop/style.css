@@ -2,6 +2,15 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 body{
     background-image: url(./images/color\ background.jpg);
     background-color: black;
@@ -11,6 +20,7 @@ body{
 }
 
 #personalNav{
+    margin-top: 25px;
     padding-left: 70px;
     margin-right: 25px;
     margin-left: 25px;
@@ -88,8 +98,8 @@ ul li:hover{
     margin-top: 50px;
     background-color: rgba(255, 255, 255, 0.15); 
     backdrop-filter: blur(5px);
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
     border-radius: 20px;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -110,23 +120,37 @@ ul li:hover{
     
 }
 
+.fullStackIcons{
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
 
-.worksArea{
+.fullStackIcons img{
+    scale:120%
+}
+
+.worksArea, .resumeArea{
     margin-top: 25px;
-    position: relative;
-    left: 31.5%;
     background-color: rgba(255, 251, 251, 0.15); 
     border-radius: 15px;
-    max-width: 35%;
+    max-width: 100%;
     height: 100px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
-.worksArea:hover{
+.worksArea:hover, .resumeArea:hover{
+    transition: 2s;
     cursor: pointer;
-    opacity: 0.6;
+    box-shadow: inset 0px 0px 100px -20px white,0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-#viewBtn{
+#viewBtn, #viewResume{
     display: flex;
     justify-content: center;
     position: relative;
@@ -143,14 +167,61 @@ ul li:hover{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
     padding-top: 35px;
 }
 
+.bigProjectCard h3{
+    background-color: rgba(255, 251, 251, 0.15); 
+    border-radius: 10px;
+    margin-left: 175px;
+    margin-right: 175px;
+    padding-top: 10px;
+    height: 50px;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.wrapper img{
+    transition: scale 400ms;
+}
+
+.wrapper:hover img{
+    scale: 100%;
+    cursor: pointer;
+}
+
 .projectImg{
+    scale:90%;
     max-width: 60%;
     border-radius: 10px;
+}
+
+.resumePdf{
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.resumePdf object{
+    width: 1000px;
+    height: 1000px
+}
+
+.footer{
+    text-align: center;
+    margin-top: 50px;
+    max-width: 100%;
+    height: 50px;
+    background-color: rgba(255, 251, 251, 0.15);
+    border-radius: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    
 }
 
 @media only screen
@@ -177,12 +248,12 @@ and (max-width : 768px){
     flex-direction: column;
 }
 
-.worksArea{
+.worksArea, .resumeArea{
     max-height: 50px;
     max-width: 300px;
 }
 
-#viewBtn{
+#viewBtn,#viewResume{
     position: relative;
     top: 10px
 }

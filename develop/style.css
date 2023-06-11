@@ -242,6 +242,7 @@ and (max-width : 768px){
     display: flex;
     flex-direction: column;
     padding: 0%;
+    padding-bottom: 15px;
 }
 
 #personalNav{
@@ -277,5 +278,8 @@ and (max-width : 768px){
     right: 0px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+  .footer{
+    height: 100px;
   }
 }

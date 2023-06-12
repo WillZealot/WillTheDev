@@ -300,3 +300,69 @@ and (max-width : 768px){
     height: 100px;
   }
 }
+
+@media only screen
+and (max-width : 555px){
+    
+    ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    padding-bottom: 15px;
+}
+
+#personalNav{
+    display:block;
+    text-align: center;
+    padding: 0%;
+    max-height: fit-content;
+}
+
+#aboutMe h2{
+    max-width:80%;
+}
+
+.fullStackIcons{
+    display: flex;
+    transform: rotate(90deg);
+}
+
+.fullStackIcons img{
+    scale:80%;
+    transform: rotate(-90deg);
+}
+
+.bigProjectCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.bigProjectCard h3{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+}
+
+.worksArea, .resumeArea{
+    max-height: 50px;
+    max-width: 300px;
+}
+
+#viewBtn,#viewResume{
+    position: relative;
+    top: 10px
+}
+
+.dropdown:hover .dropdown-content {
+    transition: 0.5s;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    right: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .footer{
+    height: 100px;
+  }

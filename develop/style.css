@@ -154,10 +154,9 @@ ul li:hover{
     margin-top: 25px;
     background-color: rgba(255, 251, 251, 0.15); 
     border-radius: 15px;
-    max-width: 100%;
+    max-width: 1000px;
     height: 100px;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin: auto;
 }
 
 .worksArea:hover, .resumeArea:hover{
@@ -351,7 +350,8 @@ and (max-width : 555px){
 
 #viewBtn,#viewResume{
     position: relative;
-    top: 10px
+    top: 10px;
+    
 }
 
 .dropdown:hover .dropdown-content {
@@ -366,3 +366,11 @@ and (max-width : 555px){
   .footer{
     height: 100px;
   }
+
+
+  @media only screen
+and (max-width : 416px){
+    #aboutMe h2{
+        max-height: 100%;
+    }
+}

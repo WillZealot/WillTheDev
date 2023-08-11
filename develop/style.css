@@ -180,6 +180,7 @@ ul li:hover{
     backdrop-filter: blur(5px);
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     margin-right: 50px;
@@ -190,9 +191,10 @@ ul li:hover{
 
 .bigProjectCard h3{
     background-color: rgba(255, 251, 251, 0.15); 
+    text-align: center;
     border-radius: 10px;
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 80px;
+    margin-right: 80px;
     padding-top: 10px;
     height: 50px;
 }
